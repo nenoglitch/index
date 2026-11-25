@@ -1,0 +1,77 @@
+/* 登录后主页专用样式（web/css/dashboard.css） */
+
+.dashboard-card {
+  text-align: center;
+  min-height: 300px;
+}
+
+.status {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.user-panel {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 26px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+  text-align: left;
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  flex: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), #6366f1);
+}
+
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.email {
+  color: var(--muted);
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logout-btn {
+  background: var(--red);
+}
+
+.logout-btn:hover {
+  filter: brightness(1.08);
+}
+
+.home-link {
+  display: block;
+  margin-top: 14px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 14px;
+}

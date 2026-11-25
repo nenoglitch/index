@@ -1,0 +1,9 @@
+/* 注册页专用样式（web/css/register.css） */
+
+.register-card {
+  min-height: 400px;
+}
+
+.register-card .btn {
+  margin-top: 6px;
+}

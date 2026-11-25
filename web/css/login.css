@@ -1,0 +1,9 @@
+/* 登录页专用样式（web/css/login.css） */
+
+.login-card {
+  min-height: 340px;
+}
+
+.login-card .btn {
+  margin-top: 6px;
+}

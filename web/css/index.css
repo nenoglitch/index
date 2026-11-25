@@ -1,0 +1,24 @@
+/* 首页专用样式（web/css/index.css） */
+
+.home-card {
+  min-height: 280px;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background: #eef2ff;
+}

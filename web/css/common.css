@@ -1,0 +1,136 @@
+/* 公共样式：全局重置、布局、卡片、表单与按钮（web/css/common.css） */
+
+:root {
+  --bg: #eef2f7;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --soft: #f8fafc;
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --green: #047857;
+  --red: #b91c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(900px 500px at 0% 0%, rgba(79, 70, 229, 0.10), transparent 55%),
+    radial-gradient(800px 500px at 100% 10%, rgba(14, 165, 233, 0.10), transparent 50%),
+    var(--bg);
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 72px 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 24px 50px -26px rgba(15, 23, 42, 0.35);
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.form-item {
+  margin-bottom: 18px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 6px;
+  color: #334155;
+  font-size: 14px;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--soft);
+  outline: none;
+}
+
+.form-item input:focus {
+  border-color: var(--primary);
+  background: #fff;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.link-group {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.link-group a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.tip {
+  min-height: 20px;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--red);
+}
+
+.tip.is-success {
+  color: var(--green);
+}
